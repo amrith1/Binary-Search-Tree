@@ -1,6 +1,7 @@
 #include <iostream>
 #include "BST312.h"
 using namespace std;
+
 int main() {
 
     BST_312<int> bst;
@@ -47,5 +48,10 @@ int main() {
     }
 
     cout << endl << yuh.countNodes();
+
+    yuh.makeEmpty();
+
+    cout << endl << yuh.countNodes();
+
     return 0;
 }

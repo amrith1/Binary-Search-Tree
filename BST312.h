@@ -141,7 +141,6 @@ private:
     void copyTree(TreeNode*& copy, const TreeNode *originalTree);
 
 };
-
 /*******************************
 //Function implementations
 ********************************/
@@ -250,7 +249,7 @@ void BST_312 <ItemType>::makeEmpty(TreeNode*& t)
     TreeNode *left, *right;
     left = t -> left;
     right = t ->right;
-    delete(t);
+    delete t;
     if(left != NULL){
         makeEmpty(left);
     }
@@ -461,4 +460,5 @@ bool BST_312 <ItemType>::isItemInTree(const ItemType& item)
         }
     }
 }
+
 #endif

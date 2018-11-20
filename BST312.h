@@ -247,7 +247,7 @@ void BST_312 <ItemType>::deleteItem(const ItemType& newItem)
 template<class ItemType>
 void BST_312 <ItemType>::makeEmpty(TreeNode*& t)
 {
-    TreeNode* left, right;
+    TreeNode *left, *right;
     left = t -> left;
     right = t ->right;
     delete(t);
